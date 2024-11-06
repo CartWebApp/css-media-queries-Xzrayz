@@ -63,13 +63,33 @@
 }
 
 /* Tablet Styles*/
+@media screen and (min-width:520px)and(max-width: 1024px) {
+  .flex-container{
+    height: fit-content;
+  }
+    .quarter{
+      width: 48%;
+  }
+  .third{
+    width: 48%;
+    order: 2;
+  }
+  .third:last-child{
+    /*flex-grow: 1;*/
+    width:97%;
+    order: 1;
+  }
+}
 
-
+@media screen and (max-width:520px){
+  .half,
+  .third,
+  .quarter{
+    width: 97%;
+  }
+  
+}
 
 
 /* Mobile Styles*/
-
-
-
-
 
